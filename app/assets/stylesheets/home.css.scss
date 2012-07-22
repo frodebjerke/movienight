@@ -1,11 +1,13 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {background: url(image_path("get_the_gringo_1920x1080.png")) no-repeat fixed center;}
+html {background: url(image_path("get_gringo.jpeg")) no-repeat center center fixed; background-size: cover;}
+body {background: none;}
 
-#maincontainer  {margin-top: 5%;}
+#maincontainer  {padding-top: 5%;}
 .box      {border: solid 1px; background: rgba(200,200,255,0.5);}
 .rounded  {border-radius: 5px;}
 .entry    {}
 .stats    {min-height: 400px;}
 #video    {margin: 5%; min-width: 320px; width: 90%; min-height: 360px; height: 90%;}
+#bottom   {position: absolute; bottom: 0; text-align: center; width: 100%;}
