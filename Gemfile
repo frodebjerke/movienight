@@ -5,7 +5,12 @@ gem 'rails', '3.2.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite'
+#gem 'sqlite'
+
+gem 'execjs'
+
+gem 'therubyracer'
+
 
 
 # Gems used only for assets and not required
@@ -38,9 +43,8 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 # If you use a different database in development, hide it from Cloud Foundry.
-group :development, :test do
+group :development do
   gem 'sqlite3'
-  gem 'ruby-debug19'
 end
 
 # Rails 3.1 can use the latest mysql2 gem.
