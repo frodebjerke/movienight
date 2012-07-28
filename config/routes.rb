@@ -1,5 +1,6 @@
 Movienight::Application.routes.draw do
   root :to => "home#index"
+  match 'event/:id' => "event#event"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
