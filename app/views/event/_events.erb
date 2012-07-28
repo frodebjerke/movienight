@@ -1,0 +1,13 @@
+<% @Events.each do |event| %>
+    <div class="row-fluid">
+      <div class="box rounded entry span11">
+        <button class="btn btn-toolbar" data-toggle="collapse" data-target="#eventinfo">
+          <%= event.name %>
+        </button>
+        <div id="eventinfo">
+          <%= event.date %>
+          <%= event.about%>
+        </div>
+      </div>
+    </div>
+<% end %>

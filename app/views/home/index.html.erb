@@ -1,47 +1,7 @@
 <div class="container-fluid" id="maincontainer">
   <div class="row-fluid offset4">
     <div class="span6" id="eventcontainer">
-
-      <div class="row-fluid">
-        <div class="box rounded entry span11">
-          <button class="btn btn-toolbar" data-toggle="collapse" data-target="#eventmovies1">
-            Sci-fi night
-          </button>
-
-          <div class="eventinfo rounded">
-            <h3>Sci-fri night</h3>
-            <p>Gathering all the Comp-sci guys for a totally awesome night in space here at my crib. I got the chips, you bring
-            the soda! Add your movie and vote below!</p>
-          </div>
-
-          <div id="eventmovies1" class="collapse">
-            <h4>Add your movie here!</h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="row-fluid">
-        <div class="box rounded entry span11">
-          <button class="btn btn-toolbar" data-toggle="collapse" data-target="#demo1">
-            Cheech & Chong marathon
-          </button>
-          <div id="demo1" class="collapse">
-            <div class="stats"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row-fluid">
-        <div class="box rounded entry span11">
-          <button class="btn btn-toolbar btn-danger" data-toggle="collapse" data-target="#demo2">
-            Init event
-          </button>
-          <div id="demo2" class="collapse">
-            <iframe id="video2" src="http://www.youtube.com/embed/7ku_AOOdvW8?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
+      <%= render :partial => 'event/events' %>
     </div>
     <div class="span3" id="statscontainer">
       <div class="box rounded stats">
