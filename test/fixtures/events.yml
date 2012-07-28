@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  date: 2012-07-28 23:11:41
+  theme: MyString
+  about: MyString
+  creator: 
+
+two:
+  name: MyString
+  date: 2012-07-28 23:11:41
+  theme: MyString
+  about: MyString
+  creator: 
