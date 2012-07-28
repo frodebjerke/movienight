@@ -11,6 +11,8 @@ gem 'execjs'
 
 gem 'therubyracer'
 
+gem 'rest-client'
+
 
 
 # Gems used only for assets and not required
