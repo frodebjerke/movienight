@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  title: 
+  year: 
+  mpaa_rating: MyString
+  runtime: MyString
+  critics_consensus: MyString
+  synopsis: MyString
+
+two:
+  id: 
+  title: 
+  year: 
+  mpaa_rating: MyString
+  runtime: MyString
+  critics_consensus: MyString
+  synopsis: MyString

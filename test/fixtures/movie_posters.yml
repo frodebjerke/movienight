@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+DEFAULTS: &DEFAULTS
+  created_at: 3.weeks.ago.to_s(:db)
+  updated_at: 3.weeks.ago.to_s(:db)
+
+
+one:
+  img_type: MyString
+  link: MyString
+  movie_id: 1
+  <<: *DEFAULTS
+
+two:
+  img_type: MyString
+  link: MyString
+  movie_id: 1
+  <<: *DEFAULTS

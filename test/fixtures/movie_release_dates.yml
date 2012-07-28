@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  place: MyString
+  release_date: 2012-07-28
+  movie_id: 1
+
+two:
+  place: MyString
+  release_date: 2012-07-28
+  movie_id: 1
