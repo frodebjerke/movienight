@@ -13,11 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20120728213039) do
 
-  create_table "movie_casts", :force => true do |t|
-    t.string   "name"
-    t.string   "character"
-    t.integer  "movie_id"
-
   create_table "events", :force => true do |t|
     t.string   "name"
     t.datetime "date"
@@ -28,12 +23,23 @@ ActiveRecord::Schema.define(:version => 20120728213039) do
     t.datetime "updated_at", :null => false
   end
 
+  add_index "events", ["creator_id"], :name => "index_events_on_creator_id"
+
+  create_table "movie_casts", :force => true do |t|
+    t.string   "name"
+    t.string   "character"
+    t.integer  "movie_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   add_index "movie_casts", ["movie_id"], :name => "index_movie_casts_on_movie_id"
 
   create_table "movie_posters", :force => true do |t|
-    t.string   "img_type"
-    t.string   "link"
-    t.integer  "movie_id"
+    t.string  "img_type"
+    t.string  "link"
+    t.integer "movie_id"
+
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -70,6 +76,5 @@ ActiveRecord::Schema.define(:version => 20120728213039) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end
-  add_index "events", ["creator_id"], :name => "index_events_on_creator_id"
 
 end
