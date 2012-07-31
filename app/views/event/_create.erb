@@ -1,0 +1,41 @@
+<div class="row-fluid">
+  <div class="box rounded entry span11">
+    <button class="btn btn-danger" data-toggle="collapse" data-target="#createevent">
+      Init a new movienight
+    </button>
+    <div id="createevent">
+      <%= form_for(@event) do |event| %>
+          <% if @event.errors.any? %>
+              <div id="errorExplanation">
+                <h2><%= pluralize(@event.errors.count, "error") %> prohibited
+                  this post from being saved:</h2>
+                <ul>
+                  <% @event.errors.full_messages.each do |msg| %>
+                      <li><%= msg %></li>
+                  <% end %>
+                </ul>
+              </div>
+          <% end %>
+
+          <div class="field">
+            <%= event.label :name %>
+            <br/>
+            <%= event.text_field :name %>
+          </div>
+          <div class="field">
+            <%= event.label :theme %>
+            <br/>
+            <%= event.text_field :theme %>
+          </div>
+          <div class="field">
+            <%= event.label :about %>
+            <br/>
+            <%= event.text_area :about %>
+          </div>
+          <div class="actions">
+            <%= event.submit %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>

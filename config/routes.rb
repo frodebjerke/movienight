@@ -1,4 +1,6 @@
 Movienight::Application.routes.draw do
+  resources :events
+
   root :to => "home#index"
   match 'event/:id' => "event#event"
 
